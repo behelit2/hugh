@@ -12,15 +12,8 @@ Hugh is a command line chatbot written in Python that's been built on the Micros
 
 4. Using Hugh. Interacting with Hugh primarily involves posing queries, providing instructions or setting creative tasks. More intricate concepts might require multiple prompting for accurate comprehension. However, Hugh learns and adapts quickly, specific examples significantly aid its understanding. Hugh has basic datetime support and should be able to accurately reference the date or time using the system clock in conversations. Further, all conversations are saved in chatlog.txt for easy reference and review. Typing /clear allows you to clear the conversation buffer, and /quit allows you to gracefully exit the application.
 
-5. Running CPU mode. Replace the following rows:
-   device = "cuda:0"
-   fp_format = torch.float16
-   
-   with
-
-   device = "cpu"
-   fp_format = torch.float32
+5. Running CPU mode. Replace [device = "cuda:0"] with [device = "cpu"] and [fp_format = torch.float16] with [fp_format = torch.float32].
  
-7. Acknowledgement. Your feedback and contributions to this project are highly appreciated. Together we can help Hugh grow and perform far better.
+6. Acknowledgement. Your feedback and contributions to this project are highly appreciated. Together we can help Hugh grow and perform far better.
 
-8. License. This project is MIT license, further details can be found in the LICENSE file included in this repository.
+7. License. This project is MIT license, further details can be found in the LICENSE file included in this repository.
