@@ -11,12 +11,6 @@ device = "cuda:0"
 fp_format = torch.float16
 model_path = "./phi-2"
 
-qa_tokens = 256
-qa_temp = 0.11
-qa_top_k = 128
-qa_top_p = 0.99
-qa_nr_ngram_size = 11
-
 tokens = 256
 temp = 0.11
 top_k = 128
