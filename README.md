@@ -1,18 +1,25 @@
-Hugh - The Command Line Chatbot
+-Hugh- The Command Line Chatbot
 
 Hugh is a command line chatbot that's been built on the Microsoft Phi-2 Research Model. It's designed to assist you with any queries or tasks you propose, providing a seamless blend of question-answering, instruction-following, and creative command execution capabilities in a single conversational interface.
 
-Using Hugh -
-You will need the Phi-2 model for Hugh to work. Once you have obtained the model, adjust the model's file path in the script. You can download Phi-2 here: https://huggingface.co/microsoft/phi-2
+-Downloading the Model-
+You need to acquire the Phi-2 Model to use with Hugh. Go to the Hugging Face Model page for Phi-2. The URL is https://huggingface.co/microsoft/phi-2
 
-Purpose -
+You will need to download the model to a location in your local machine. Instructions for that here https://huggingface.co/docs/hub/en/models-downloading
+
+-Referencing the Model and running hugh01.py-
+Once you have successfully downloaded the model, you must point to the path of this model in hugh01.py. Locate the code near the top referencing microsoft/phi-2 and ensure it is pointed to the correct location. Once your paths are correct, simply run hugh01.py at the command line like so:
+
+python3 hugh01.py
+
+-Purpose-
 The primary goal for Hugh is to serve as a foundation for more advanced chatbots, aiming to undertake valuable operational tasks and coding at the OS level. It excels in various areas and provides satisfactory performance on most benchmarks.
 
-Interacting with Hugh -
-Interacting with Hugh primarily involves posing queries, providing instructions or setting creative tasks. More intricate concepts might require multiple prompting for accurate comprehension. However, Hugh learns and adapts quickly, specific examples significantly aid its understanding.
+-Interacting with Hugh-
+Interacting with Hugh primarily involves posing queries, providing instructions or setting creative tasks. More intricate concepts might require multiple prompting for accurate comprehension. However, Hugh learns and adapts quickly, specific examples significantly aid its understanding. Hugh has basic datetime support and should be able to accurately reference the date or time using the system clock in conversations. Further, all conversations are saved in chatlog.txt for easy reference and review. Typing /clear allows you to clear the conversation buffer, and /quit allows you to gracefully exit the application.
 
-Acknowledgement -
+-Acknowledgement-
 Your feedback and contributions to this project are highly appreciated. Together we can help Hugh grow and perform far better.
 
-License -
+-License-
 This project is MIT license, further details can be found in the LICENSE file included in this repository.
