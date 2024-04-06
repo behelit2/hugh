@@ -1,6 +1,6 @@
 Hugh: The Command Line Chatbot. 
 
-Hugh is a command line chatbot that's been built on the Microsoft Phi-2 Research Model. It's designed to assist you with any queries or tasks you propose, providing a seamless blend of question-answering, instruction-following, and creative command execution capabilities in a single conversational interface.
+Hugh is a command line chatbot written in Python that's been built on the Microsoft Phi-2 Research Model. It's designed to assist you with any queries or tasks you propose, providing a seamless blend of question-answering, instruction-following, and creative command execution capabilities in a single conversational interface.
 
 1. Downloading the Model. You need to get the Phi-2 Model to use with Hugh. Go to the Hugging Face page for Phi-2. The URL is https://huggingface.co/microsoft/phi-2 You will need to download the model to a location on your local pc or server. Instructions for that here https://huggingface.co/docs/hub/en/models-downloading
 
