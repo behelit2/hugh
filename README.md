@@ -1,6 +1,6 @@
 Hugh: The Command Line Chatbot. 
 
-Hugh is a command line chatbot written in Python that's been built on the Microsoft Phi-2 Research Model. It's designed to assist you with any queries or tasks you propose, providing a seamless blend of question-answering, instruction-following, and creative command execution capabilities in a single conversational interface. Phi-2 being a 2.7b model, Hugh has a low memory footprint and can run with either cpu or cuda. Yet, it has many of the capabilities of a vastly larger model that would not be practical to host locally.
+Hugh is a command line chatbot written in Python that's been built on the Microsoft Phi-2 Research Model. It's designed to assist you with any queries or tasks you propose, providing a seamless blend of question-answering, instruction-following, and creative command execution capabilities in a single conversational interface. Phi-2 being a 2.7b model, Hugh has a low memory footprint and can run with either CPU or CUDA. Yet, it has many of the capabilities of a vastly larger model that would not be practical to host locally.
 
 1. Downloading the Model. You need to get the Phi-2 Model to use with Hugh. Go to the Hugging Face page for Phi-2. The URL is https://huggingface.co/microsoft/phi-2 You will need to download the model to a location on your local pc or server. Instructions for that here https://huggingface.co/docs/hub/en/models-downloading
 
@@ -12,6 +12,15 @@ Hugh is a command line chatbot written in Python that's been built on the Micros
 
 4. Using Hugh. Interacting with Hugh primarily involves posing queries, providing instructions or setting creative tasks. More intricate concepts might require multiple prompting for accurate comprehension. However, Hugh learns and adapts quickly, specific examples significantly aid its understanding. Hugh has basic datetime support and should be able to accurately reference the date or time using the system clock in conversations. Further, all conversations are saved in chatlog.txt for easy reference and review. Typing /clear allows you to clear the conversation buffer, and /quit allows you to gracefully exit the application.
 
-5. Acknowledgement. Your feedback and contributions to this project are highly appreciated. Together we can help Hugh grow and perform far better.
+5. Running CPU mode. Replace the following rows:
+   device = "cuda:0"
+   fp_format = torch.float16
+   
+   with
 
-6. License. This project is MIT license, further details can be found in the LICENSE file included in this repository.
+   device = "cpu"
+   fp_format = torch.float32
+ 
+7. Acknowledgement. Your feedback and contributions to this project are highly appreciated. Together we can help Hugh grow and perform far better.
+
+8. License. This project is MIT license, further details can be found in the LICENSE file included in this repository.
