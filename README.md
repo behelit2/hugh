@@ -4,7 +4,7 @@ Hugh is a command line chatbot that's been built on the Microsoft Phi-2 Research
 
 1. Downloading the Model. You need to acquire the Phi-2 Model to use with Hugh. Go to the Hugging Face Model page for Phi-2. The URL is https://huggingface.co/microsoft/phi-2 You will need to download the model to a location in your local machine. Instructions for that here https://huggingface.co/docs/hub/en/models-downloading
 
-2. Referencing the Model and running hugh01.py. Once you have successfully downloaded the model, you must point to the path of this model in hugh01.py. Locate the code near the top referencing microsoft/phi-2 and ensure it is pointed to the correct location. Once your paths are correct, simply run hugh01.py at the command line like so:
+2. Referencing the Model and running hugh01.py. Once you have successfully downloaded the model, you must point to the path of this model in hugh01.py. Locate the [model_path = "./phi-2"] row and ensure it is pointed to the correct location. Once your path is correct, simply run hugh01.py at the command line like so:
 
    python3 hugh01.py
 
