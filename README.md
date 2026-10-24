@@ -1,3 +1,5 @@
+The Phi-2 version of Hugh is very old at this point. For the latest version of Hugh using IBM Granite, go here: https://github.com/behelit2/Granite-Hugh
+
 Hugh: The Command Line Chatbot. 
 
 Hugh is a command line chatbot written in Python that's been built on the Microsoft Phi-2 Research Model. It's designed to assist you with any queries or tasks you propose, providing a seamless blend of question-answering, instruction-following, and creative command execution capabilities in a single conversational interface. Phi-2 being a 2.7b model, Hugh has a low memory footprint and can run with either CPU or CUDA. Yet, it has many of the capabilities of a vastly larger model that would not be practical to host locally.
